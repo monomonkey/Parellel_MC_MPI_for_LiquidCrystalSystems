@@ -1,0 +1,34 @@
+# ===================================================
+# MC Simulation Parameters for GBW Colloidal System
+# ===================================================
+
+mc_ensemble_type 1                    # MC ensemble type (1=NVT, 2=NPT)
+
+num_particles 5000                    # Number of particles
+system_density 0.001                  # System density
+system_temperature 0.5                # Temperature
+system_pressure 30.0                  # Pressure
+gb_sigma_sidetoside 1.0               # Gay-Berne sigma side-to-side
+gb_epsilon0 1.0                       # Gay-Berne epsilon0
+
+gb_kappa 4.4                          # Gay-Berne anisotropy kappa
+gb_kappa_prime 20.0                   # Gay-Berne anisotropy kappa_prime
+gb_mu_exponent 1.0                    # Gay-Berne mu exponent
+gb_nu_exponent 1.0                    # Gay-Berne nu exponent
+
+max_displacement 1.5                  # Maximum translation
+max_rotation 0.5                      # Maximum rotation
+
+initial_configuration_type 1          # Initial configuration type
+
+cutoff_radius 5.5                     # Interaction cutoff radius
+verlet_radius 7.0                     # Verlet_radius
+
+total_mc_cycles 10000                 # Total MC cycles
+configuration_save_interval 100       # Configuration save interval
+statistics_print_interval 100         # Statistics print interval
+
+colloid_wall_option 2                 # Colloid-wall interaction option
+colloid_interaction_epsilon 15        # Colloid interaction epsilon
+colloid_interaction_amplitude 1.5     # Colloid interaction amplitude
+colloid_radius 10                     # Colloid radius
